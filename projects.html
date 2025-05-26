@@ -6,35 +6,113 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: #ffffff;
+    html, body {
+      background: #F7F7FF;
       color: #000000;
       font-family: 'Forum', serif;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      min-height: 100%;
+      overflow-y: auto;
     }
+
     .top-menu {
-      position: fixed;
+      position: absolute;
       top: 64px;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       text-align: center;
-      padding: 20px 0;
-      font-size: 28px;
-      font-family: 'Forum', serif;
+      padding: 10px 0;
+      font-size: 22px;
       background: transparent;
       z-index: 10;
     }
+
     .top-menu a {
-      color: #000000;
+      color: #214E34;
       text-decoration: none;
     }
-    .coming-soon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 36px;
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 180px 40px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-card h3 {
+      margin: 16px;
+      color: #214E34;
+      font-size: 24px;
+    }
+
+    .project-card p {
+      margin: 0 16px 16px;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .view-button {
+      display: block;
+      margin: 0 16px 16px;
+      padding: 10px 20px;
+      background-color: #86CD82;
+      color: white;
       text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-button:hover {
+      background-color: #6bbd6a;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/leaf-pattern-light.svg');
+      background-repeat: repeat;
+      background-size: 200px;
+      opacity: 0.05;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 600px) {
+      .top-menu {
+        font-size: 18px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        top: 20px;
+      }
     }
   </style>
 </head>
@@ -45,6 +123,37 @@
     <a href="feedback.html">Feedback</a>
   </div>
 
-  <div class="coming-soon">Coming soon...</div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="images/project1-thumb.jpg" alt="Project 1 Thumbnail">
+      <h3>The Friendship Park, Khimki. Place that brings not only friends together.</h3>
+      <p>Khimki - the urban town next to Moscow. The Friendship part right in the heart of this city connects people, creatures around and the Mother Nature together. This week's project explores what one feels when enters this place - from the calmness as a still pond to the anxiety after getting disturbed by the sudden crow.</p>
+      <a href="project1.html" class="view-button">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/project2-thumb.jpg" alt="Project 2 Thumbnail">
+      <h3>Project Title 2</h3>
+      <p>Short description of the project.</p>
+      <a href="project2.html" class="view-button">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/project3-thumb.jpg" alt="Project 3 Thumbnail">
+      <h3>Project Title 3</h3>
+      <p>Short description of the project.</p>
+      <a href="project3.html" class="view-button">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/project4-thumb.jpg" alt="Project 4 Thumbnail">
+      <h3>Project Title 4</h3>
+      <p>Short description of the project.</p>
+      <a href="project4.html" class="view-button">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/project5-thumb.jpg" alt="Project 5 Thumbnail">
+      <h3>Project Title 5</h3>
+      <p>Short description of the project.</p>
+      <a href="project5.html" class="view-button">View Project</a>
+    </div>
+  </div>
 </body>
 </html>

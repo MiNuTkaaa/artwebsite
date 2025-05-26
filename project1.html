@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Forum', serif;
+      background-color: #F7F7FF;
+      color: #000;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      height: 400px;
+      background-image: url('images/leaf-silhouette.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .top-menu {
+      position: absolute;
+      top: 64px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+    }
+
+    .top-menu a {
+      color: #214E34;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 160px auto 40px;
+      padding: 0 20px;
+    }
+
+    .project-description {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .art-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .art-piece, .art-video {
+      flex: 1 1 45%;
+      max-width: 45%;
+      background: #fff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .art-piece img, .art-video video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .art-piece audio {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .art-piece p, .art-video p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .art-piece, .art-video {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-menu">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+  <div class="container">
+    <div class="project-description">
+      <p>Khimki - the urban town next to Moscow. The Friendship part right in the heart of this city connects people, creatures around and the Mother Nature together. This week's project explores what one feels when enters this place - from the calmness as a still pond to the anxiety after getting disturbed by the sudden crow.</p>
+    </div>
+
+    <div class="art-section">
+      <div class="art-piece">
+        <img src="images/project1-photo1.jpg" alt="Artwork 1">
+        <p>05/24/2025; 5:05 PM; Friendship park, Khimki; 81 F, sunny, clear sky; "Everyone of us chooses the path in front"</p>
+      </div>
+      <div class="art-video">
+        <video controls src="videos/project1-video1.mp4"></video>
+        <p>Description of my feelings about the "Everyone of us chooses the path in front"</p>
+      </div>
+    </div>
+
+    <div class="art-section">
+      <div class="art-piece">
+        <audio controls src="audio/project1-audio1.mp3"></audio>
+        <p>05/24/2025; 5:26 PM; Friendship park, Khimki; 81 F, sunny, clear sky; "Sounds of nature with crows in the back"</p>
+      </div>
+      <div class="art-video">
+        <video controls src="videos/project1-video2.mp4"></video>
+        <p>Desctiption of my feelings about the "Sounds of nature with crows in the back"</p>
+      </div>
+    </div>
+
+    <div class="art-section">
+      <div class="art-piece">
+        <img src="images/project1-photo2.jpg" alt="Artwork 3">
+        <p>05/24/2025; 5:47 PM; Friendship park, Khimki; 79 F, sunny, clear sky; "The dance next to the water"</p>
+      </div>
+      <div class="art-video">
+        <video controls src="videos/project1-video3.mp4"></video>
+        <p>Description of my feelings about the "The dance next to the water" and how my reflection opened my senses.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

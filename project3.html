@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Forum', serif;
+      background-color: #F7F7FF;
+      color: #000;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      height: 400px;
+      background-image: url('images/leaf-silhouette.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .top-menu {
+      position: absolute;
+      top: 64px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+    }
+
+    .top-menu a {
+      color: #214E34;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 160px auto 40px;
+      padding: 0 20px;
+    }
+
+    .project-description {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .art-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .art-piece, .art-video {
+      flex: 1 1 45%;
+      max-width: 45%;
+      background: #fff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .art-piece img, .art-video video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .art-piece audio {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .art-piece p, .art-video p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .art-piece, .art-video {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-menu">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+  <div class="container">
+    <div class="project-description">
+      <p>This week I wanted to explore the huge park next to my house, and found how nature and humans can live together, creating a perfectly balanced symbiosis. I welcome you to walk in this place with me - and see one of the biggest Moscow parks with my eyes./p>
+    </div>
+
+    <div class="art-section">
+      <div class="art-piece">
+        <img src="images/project3-photo1.jpg" alt="Artwork 1">
+        <p>06/09/2025; 6:10 PM; Pokrovskoe-Streshnevo park, Moscow; 79 F, sunny, a bit cloudy sky; "We welcome you to workout with nature"</p>
+      </div>
+      <div class="art-video">
+        <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1091914382?h=821a83d0a5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Project 3 Video 1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p>06/09/2025; 6:10 PM; Pokrovskoe-Streshnevo park, Moscow; 79 F, sunny, a bit cloudy sky; "We welcome you to workout with nature"</p>
+      </div>
+    </div>
+
+    <div class="art-section">
+      <div class="art-piece">
+        <img src="images/project3-photo2.jpg" alt="Artwork 1">
+        <p>06/09/2025; 6:37 PM; Pokrovskoe-Streshnevo park, Moscow; 79 F, sunny, a bit cloudy sky; "The Big Tree"</p>
+      </div>
+      <div class="art-video">
+        <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1091915016?h=25f09f4b2e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="20250609_182720"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p>06/09/2025; 6:37 PM; Pokrovskoe-Streshnevo park, Moscow; 79 F, sunny, a bit cloudy sky; "The Big Tree"</p>
+      </div>
+    </div>
+
+
+    <div class="art-section">
+      <div class="art-piece">
+        <img src="images/project3-photo3.jpg" alt="Artwork 3">
+        <p>06/09/2025; 7:04 PM; Pokrovskoe-Streshnevo park, Moscow; 77 F, cloudy; "The small power"</p>
+      </div>
+      <div class="art-video">
+        <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1091936581?h=cb20160760&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="20250609_183537"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p>06/09/2025; 7:04 PM; Pokrovskoe-Streshnevo park, Moscow; 77 F, cloudy; "The small power"</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
